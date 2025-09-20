@@ -2,6 +2,10 @@ import mysql.connector
 from mysql.connector import Error
 from typing import Optional, Dict, Any
 import os
+from dotenv import load_dotenv
+
+# .envファイルを読み込む
+load_dotenv()
 
 # データベース接続設定
 DB_CONFIG = {
